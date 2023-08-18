@@ -1,0 +1,76 @@
+/* !Other pages button styles */
+.ch-sonic-textarea-box {
+  position: absolute;
+  pointer-events: none;
+}
+
+.ch-sonic-logo-btn.textarea_btn_small,
+.ch-sonic-logo-btn.textarea_btn_default {
+  background: #705cf6;
+  border-radius: 50%;
+}
+
+.ch-sonic-logo-btn.textarea_btn_small,
+.ch-sonic-logo-btn.textarea_btn_default,
+.ch-sonic-textarea-box .ch-sonic-gen-man {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  pointer-events: all;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.ch-sonic-logo-btn.textarea_btn_small img {
+  opacity: 0;
+  visibility: hidden;
+  willchange: opacity;
+}
+
+.ch-sonic-logo-btn.textarea_btn_small {
+  width: 8px;
+  height: 8px;
+}
+.ch-sonic-logo-btn.textarea_btn_default,
+.ch-sonic-logo-btn.textarea_btn_small:hover {
+  width: 22px;
+  height: 22px;
+  border-radius: 0;
+  background: transparent;
+}
+.ch-sonic-logo-btn.textarea_btn_small:hover img {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ch-sonic-textarea-box[data-item] .ch-sonic-logo-btn {
+  right: 10px;
+  bottom: 10px;
+}
+
+.ch-sonic-textarea-box[data-item] .ch-sonic-gen-man {
+  right: 40px;
+  bottom: 10px;
+}
+.ch-sonic-textarea-box[data-item="input"] .ch-sonic-gen-man {
+  right: 35px;
+  bottom: 5px;
+}
+
+.ch-sonic-textarea-box[data-item="textarea"] .ch-sonic-logo-btn {
+  right: 10px;
+  bottom: 10px;
+}
+.ch-sonic-textarea-box[data-item="input"] .ch-sonic-logo-btn {
+  right: 5px;
+  bottom: 5px;
+}
+
+.ch-sonic-logo-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
